@@ -1,35 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <!-- jQuery JavaScript -->
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <!-- Module CSS -->
-    <link rel="stylesheet" href="questions.css" />
-  </head>
+  <!-- jQuery JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
 
-  <body class="body">
-    <h1 class="h1">Questions works!</h1>
-    <!-- Module JavaScript -->
-    <script type="text/javascript" src="./questions.js"></script>
-  </body>
+  <!-- Module CSS -->
+  <link rel="stylesheet" href="questions.css" />
+</head>
+
+<body class="body">
+  <!-- Question 1 -->
+  <div class="container mt-5 question-container" id="question-1">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Question 1</h5>
+        <p class="card-text">Quelle est la capitale de la France?</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="1" data-answer="false">Londres</button>
+          </div>
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="1" data-answer="true">Paris</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="1" data-answer="false">Madrid</button>
+          </div>
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="1" data-answer="false">Rome</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="container mt-5 question-container question-hidden" id="question-2">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Question 2</h5>
+        <p class="card-text">Quelle compagnie est derrière Google?</p>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="2" data-answer="true">Alphabet</button>
+          </div>
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="2" data-answer="false">Constellation</button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="2" data-answer="false">Oracle</button>
+          </div>
+          <div class="col-md-6 mb-6">
+            <button class="btn btn-light answer-button" data-index="2" data-answer="false">Meta</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Question 3 -->
+    <div class="container mt-5 question-container question-hidden" id="question-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Question 3</h5>
+          <p class="card-text">Qui était Secrétaire Général de l'ONU de 2007 à 2016?</p>
+          <div class="row justify-content-center">
+            <div class="col-md-6 mb-6">
+              <button class="btn btn-light answer-button" data-index="3" data-answer="false">Boutros Boutros-Ghali</button>
+            </div>
+            <div class="col-md-6 mb-6">
+              <button class="btn btn-light answer-button" data-index="3" data-answer="false">Kofi Annan</button>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-md-6 mb-6">
+              <button class="btn btn-light answer-button" data-index="3" data-answer="true">Ban Ki-moon</button>
+            </div>
+            <div class="col-md-6 mb-6">
+              <button class="btn btn-light answer-button" data-index="3" data-answer="false">António Guterres</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Module JavaScript -->
+  <script type="text/javascript" src="./questions.js"></script>
+</body>
 
 </html>
